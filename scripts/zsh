@@ -1,0 +1,9 @@
+#!/bin/sh
+
+yay -S --needed --noconfirm zsh zplug 
+
+ln -sf $(git rev-parse --show-toplevel)/.zshrc $HOME/.zshrc
+
+zsh -c 'source ~/.zshrc && zplug install'
+
+chsh -s /usr/bin/zsh

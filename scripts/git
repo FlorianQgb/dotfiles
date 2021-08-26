@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ln -sf $(git rev-parse --show-toplevel)/.gitconfig $HOME/.gitconfig
+ln -sf $(git rev-parse --show-toplevel)/.gitignore $HOME/.gitignore

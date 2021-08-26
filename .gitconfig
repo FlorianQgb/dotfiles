@@ -1,0 +1,29 @@
+[user]
+	name = Florian Quaghebeur
+	email = florian.quaghebeur@knplabs.com
+	signingkey = FE14B42437CA5F15
+[commit]
+    gpgsign = true
+[gpg]
+    program = gpg
+[alias]
+    ci = commit
+    co = checkout
+    st = status
+    br = branch
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Cgreen(%cr) %C(bold blue)<%an>%Creset'--abbrev-commit --date=relative
+[core]
+	excludesfile = ~/.gitignore
+    	editor= nvim
+	excludesfiles = /home/quaghebeur/.gitignore
+[pull]
+	default = current
+	ff = only
+[push]
+	default = current
+[tag]
+	sort = version:refname
+[branch]
+	sort = -committerdate
+[mergetool]
+	keepBackup = false
