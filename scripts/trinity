@@ -1,0 +1,3 @@
+#!/bin/bash
+
+yay -S --needed --noconfirm ripgrep fd exa fzf
